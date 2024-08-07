@@ -1,0 +1,27 @@
++-------------------+
+|     User Input    |
+| (Keyboard Events) |
++---------+---------+
+          |
+          v
++---------+---------+
+|       Game        |
+|-------------------|
+| - Main Game Loop  |
+| - Event Handling  |
+| - Game States     |
++----+----+----+----+
+     |    |    |
+     v    v    v
++----+  +-+--+  +--+----------------+
+|Snake|  |Food|  |   ScoreBoard     |
+|-----|  |----|  |------------------|
+| - Movement   |  | - Update Score  |
+| - Growth     |  | - Display Score |
+| - Collision  |  +-----------------+
++--------------+          |
+                   +------+------+
+                   | Graphical   |
+                   | Display     |
+                   | (PyGame)    |
+                   +-------------+
